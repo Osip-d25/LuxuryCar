@@ -5653,7 +5653,7 @@
             const tlFooter = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: footer,
-                    start: "-200 center",
+                    start: "-250 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5701,7 +5701,7 @@
             const mobileTlDetail = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: detail,
-                    start: "10 center",
+                    start: "-70 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5743,7 +5743,7 @@
             const mobileTlLuxury = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: luxury,
-                    start: "400 center",
+                    start: "0 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5772,8 +5772,8 @@
             }, "-=0.15");
         }
     }
-    setTimeout(delayJs, 0);
-    alert("Поправка на 768");
+    delayJs();
+    alert("Поправка на else luxury");
     window["FLS"] = true;
     isWebp();
     menuInit();
