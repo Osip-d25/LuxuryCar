@@ -5574,14 +5574,14 @@
     const footer = document.querySelector(".footer");
     function delayJs() {
         const width1180 = window.matchMedia("(min-width: 1180px)");
-        const width992 = window.matchMedia("(min-width: 992px)");
+        window.matchMedia("(min-width: 992px)");
         const width768 = window.matchMedia("(min-width: 768px)");
         const width319 = window.matchMedia("(min-width: 319px)");
         if (width1180.matches) {
             const tlDetail = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: detail,
-                    start: "-100 center",
+                    start: "-150 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5606,7 +5606,7 @@
             const tlServices = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: services,
-                    start: "40  0 center",
+                    start: "0 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5653,132 +5653,12 @@
             const tlFooter = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: footer,
-                    start: "-100 center",
+                    start: "-150 center",
                     end: "+=0",
                     markers: true
                 }
             });
             tlFooter.fromTo(footer.querySelectorAll(".footer__details"), {
-                opacity: 0,
-                x: -10
-            }, {
-                x: 0,
-                opacity: 1,
-                duration: 1
-            }).fromTo(footer.querySelectorAll(".info-menu__ul-title"), {
-                opacity: 0,
-                x: -20
-            }, {
-                opacity: 1,
-                x: 0,
-                duration: 1,
-                stagger: .15
-            }, "-=0.25").fromTo(footer.querySelectorAll(".list-footer__item"), {
-                opacity: 0,
-                x: -20
-            }, {
-                opacity: 1,
-                x: 0,
-                duration: 1,
-                stagger: .15
-            }, "-=0.75").fromTo(footer.querySelectorAll(".footer__copyright"), {
-                opacity: 0,
-                x: -20
-            }, {
-                opacity: 1,
-                x: 0,
-                duration: 1
-            }, "-=0.75").fromTo(footer.querySelectorAll(".policy__item"), {
-                opacity: 0,
-                x: -20
-            }, {
-                opacity: 1,
-                x: 0,
-                duration: 1,
-                stagger: .15
-            }, "-=0.75");
-        } else if (width992.matches) {
-            const tableTlDetail = gsapWithCSS.timeline({
-                scrollTrigger: {
-                    trigger: detail,
-                    start: "10 center",
-                    end: "+=0",
-                    markers: true
-                }
-            });
-            tableTlDetail.from(detail.querySelector(".detail__title"), {
-                opacity: 0,
-                yPercent: -40,
-                duration: .5
-            }, "-=0.1").from(detail.querySelector(".detail__text"), {
-                opacity: 0,
-                xPercent: -10,
-                duration: 1
-            }, "-=0.5").fromTo(detail.querySelectorAll(".learn__items"), {
-                yPercent: 30,
-                opacity: 0
-            }, {
-                yPercent: 0,
-                opacity: 1,
-                duration: .75,
-                stagger: .25
-            }, "-=0.25");
-            const tableTlServices = gsapWithCSS.timeline({
-                scrollTrigger: {
-                    trigger: services,
-                    start: "350 center",
-                    end: "+=0",
-                    markers: true
-                }
-            });
-            tableTlServices.fromTo(services.querySelectorAll(".services__info"), {
-                x: 200,
-                opacity: 0
-            }, {
-                x: 0,
-                opacity: 1,
-                duration: .75,
-                stagger: .25
-            });
-            const tableTlLuxury = gsapWithCSS.timeline({
-                scrollTrigger: {
-                    trigger: luxury,
-                    start: "550 center",
-                    end: "+=0",
-                    markers: true
-                }
-            });
-            tableTlLuxury.fromTo(luxury.querySelector(".luxury__title"), {
-                opacity: 0,
-                x: -15
-            }, {
-                opacity: 1,
-                x: 0,
-                duration: .75
-            }).fromTo(luxury.querySelector(".luxury__text"), {
-                opacity: 0,
-                x: -15
-            }, {
-                opacity: 1,
-                x: 0,
-                duration: .75
-            }, "-=0.15").fromTo(luxury.querySelector(".luxury__link"), {
-                opacity: 0,
-                x: -15
-            }, {
-                opacity: 1,
-                x: 0,
-                duration: .75
-            }, "-=0.15");
-            const tableTlFooter = gsapWithCSS.timeline({
-                scrollTrigger: {
-                    trigger: footer,
-                    start: "400 center",
-                    end: "+=0",
-                    markers: true
-                }
-            });
-            tableTlFooter.fromTo(footer.querySelectorAll(".footer__details"), {
                 opacity: 0,
                 x: -10
             }, {
@@ -5966,6 +5846,7 @@
         }
     }
     setTimeout(delayJs, 0);
+    alert("Поправка detail footer");
     window["FLS"] = true;
     isWebp();
     menuInit();
