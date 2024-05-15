@@ -5606,7 +5606,7 @@
             const tlServices = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: services,
-                    start: "350 center",
+                    start: "50 center",
                     end: "+=0",
                     markers: true
                 }
