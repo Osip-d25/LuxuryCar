@@ -5581,7 +5581,7 @@
             const tlDetail = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: detail,
-                    start: "0 center",
+                    start: "-100 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5606,7 +5606,7 @@
             const tlServices = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: services,
-                    start: "50 center",
+                    start: "40  0 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5623,7 +5623,7 @@
             const tlLuxury = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: luxury,
-                    start: "550 center",
+                    start: "0 center",
                     end: "+=0",
                     markers: true
                 }
@@ -5653,7 +5653,7 @@
             const tlFooter = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: footer,
-                    start: "400 center",
+                    start: "-100 center",
                     end: "+=0",
                     markers: true
                 }
