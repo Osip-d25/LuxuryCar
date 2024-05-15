@@ -1066,10 +1066,6 @@ section {
     font-size: 2.875rem;
   }
 
-  .hero__image {
-    width: 150%;
-  }
-
   .learn {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
