@@ -383,8 +383,8 @@ body {
 }
 
 .mobile-menu-open {
-  left: 0;
-  opacity: 1;
+  left: 0 !important;
+  opacity: 1 !important;
 }
 
 .footer {
