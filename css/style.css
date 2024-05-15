@@ -320,11 +320,6 @@ body {
   display: none;
 }
 
-.mobile-menu-open {
-  left: 0;
-  opacity: 1;
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,6 +380,11 @@ body {
 
 .icon-menu {
   display: none;
+}
+
+.mobile-menu-open {
+  left: 0;
+  opacity: 1;
 }
 
 .footer {

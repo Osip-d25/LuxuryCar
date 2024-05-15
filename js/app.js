@@ -5573,17 +5573,13 @@
     const luxury = document.querySelector(".luxury");
     const footer = document.querySelector(".footer");
     function delayJs() {
-        window.matchMedia("(min-width: 1180px)");
-        window.matchMedia("(min-width: 992px)");
         const width768 = window.matchMedia("(min-width: 768px)");
-        window.matchMedia("(min-width: 319px)");
         if (width768.matches) {
             const tlDetail = gsapWithCSS.timeline({
                 scrollTrigger: {
                     trigger: detail,
                     start: "-150 center",
-                    end: "+=0",
-                    markers: true
+                    end: "+=0"
                 }
             });
             tlDetail.from(detail.querySelector(".detail__title"), {
@@ -5607,8 +5603,7 @@
                 scrollTrigger: {
                     trigger: services,
                     start: "0 center",
-                    end: "+=0",
-                    markers: true
+                    end: "+=0"
                 }
             });
             tlServices.fromTo(services.querySelectorAll(".services__info"), {
@@ -5624,8 +5619,7 @@
                 scrollTrigger: {
                     trigger: luxury,
                     start: "0 center",
-                    end: "+=0",
-                    markers: true
+                    end: "+=0"
                 }
             });
             tlLuxury.fromTo(luxury.querySelector(".luxury__title"), {
@@ -5654,8 +5648,7 @@
                 scrollTrigger: {
                     trigger: footer,
                     start: "-250 center",
-                    end: "+=0",
-                    markers: true
+                    end: "+=0"
                 }
             });
             tlFooter.fromTo(footer.querySelectorAll(".footer__details"), {
@@ -5702,8 +5695,7 @@
                 scrollTrigger: {
                     trigger: detail,
                     start: "-70 center",
-                    end: "+=0",
-                    markers: true
+                    end: "+=0"
                 }
             });
             mobileTlDetail.from(detail.querySelector(".detail__title"), {
@@ -5727,8 +5719,7 @@
                 scrollTrigger: {
                     trigger: services,
                     start: "250 center",
-                    end: "+=0",
-                    markers: true
+                    end: "+=0"
                 }
             });
             mobileTlServices.fromTo(services.querySelectorAll(".services__info"), {
@@ -5744,8 +5735,7 @@
                 scrollTrigger: {
                     trigger: luxury,
                     start: "0 center",
-                    end: "+=0",
-                    markers: true
+                    end: "+=0"
                 }
             });
             mobileTlLuxury.fromTo(luxury.querySelector(".luxury__title"), {
@@ -5773,7 +5763,7 @@
         }
     }
     delayJs();
-    alert("Поправка на else luxury");
+    alert("Поправка на mob menu");
     window["FLS"] = true;
     isWebp();
     menuInit();
