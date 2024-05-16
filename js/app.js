@@ -5763,7 +5763,6 @@
         }
     }
     delayJs();
-    alert("Поправка на mob menu");
     window["FLS"] = true;
     isWebp();
     menuInit();
